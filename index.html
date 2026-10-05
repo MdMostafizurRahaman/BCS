@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCS Master MCQ</title>
+<meta name="description" content="BCS Preliminary MCQ practice with instant answers and explanations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">🇧🇩 <span>BCS Master</span></div>
+    <button id="resetBtn" class="ghost">Reset</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">BCS Preliminary Practice</p>
+        <h1>একটি প্রশ্ন, একটি উত্তর, সঙ্গে সঙ্গে ফলাফল</h1>
+        <p class="sub">প্রশ্নে ক্লিক করো, উত্তর দাও, ভুল হলে ব্যাখ্যা দেখে শেখো।</p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><b id="total">1000</b><span>প্রশ্ন</span></div>
+      <div><b id="answered">0</b><span>উত্তর</span></div>
+      <div><b id="correct">0</b><span>সঠিক</span></div>
+      <div><b id="score">0%</b><span>স্কোর</span></div>
+    </section>
+
+    <div class="progress"><div id="progressBar"></div></div>
+
+    <section class="card">
+      <div class="qmeta"><span id="qno">প্রশ্ন ১ / ১০০০</span><span id="status"></span></div>
+      <h2 id="question">Loading...</h2>
+      <div id="options"></div>
+      <div id="explanation" class="explanation hidden"></div>
+      <button id="nextBtn" class="next hidden">পরের প্রশ্ন →</button>
+    </section>
+
+    <section class="controls">
+      <button id="randomBtn">🎲 Random Question</button>
+      <button id="wrongBtn">❌ ভুল প্রশ্ন</button>
+      <button id="allBtn">📚 সব প্রশ্ন</button>
+    </section>
+  </main>
+  <footer>BCS Master MCQ • Mobile friendly • Progress saved on this device</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
