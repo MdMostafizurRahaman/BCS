@@ -1,0 +1,6 @@
+artifacts/
+tests/
+scripts/
+data/legacy-questions.json
+
+data/supplemental-medmcqa.json

@@ -1,0 +1,94 @@
+{
+  "source": "https://github.com/SangbitDas/bcs-dataset",
+  "sourcePublisher": "uttoron.academy (via research compilation)",
+  "sourceSHA256": "df12274fc07d1564bdbdf58fa575c73712efe5952f87c9f22dafbd936a1a429c",
+  "allExamRows": 5350,
+  "allExamCount": 41,
+  "scopeLimitations": [
+    "Not authenticated against original PSC scans",
+    "Special-health rows cover only general sections",
+    "Publisher subject labels may differ from official subject distribution",
+    "Regex forms overlap and are not human-validated topic classifications",
+    "Text-exact repeats do not measure concept recurrence",
+    "Historical metadata and answer keys may contain errors"
+  ],
+  "specialHealthGeneral": [
+    {
+      "exam": "39th_bcs",
+      "sourceRows": 100,
+      "scope": "general section only; medical absent",
+      "subjects": {
+        "Mathematical Reasoning": 10,
+        "Bangla Language & Literature": 24,
+        "English Language & Literature": 21,
+        "Geography, Environment & Disaster Management": 1,
+        "Bangladesh Affairs": 15,
+        "International Affairs": 20,
+        "Mental Ability": 9
+      },
+      "questionFormsNonExclusive": {
+        "negative_or_exception": 6,
+        "calculation": 3,
+        "author_title": 5,
+        "language_rule": 9,
+        "date_or_number": 5
+      },
+      "imageDependent": 0,
+      "missingExplanation": 22
+    },
+    {
+      "exam": "42nd_bcs",
+      "sourceRows": 100,
+      "scope": "general section only; medical absent",
+      "subjects": {
+        "English Language & Literature": 20,
+        "Bangla Language & Literature": 19,
+        "Mental Ability": 7,
+        "Bangladesh Affairs": 21,
+        "International Affairs": 20,
+        "Mathematical Reasoning": 13
+      },
+      "questionFormsNonExclusive": {
+        "negative_or_exception": 3,
+        "calculation": 3,
+        "author_title": 2,
+        "language_rule": 8,
+        "date_or_number": 5
+      },
+      "imageDependent": 1,
+      "missingExplanation": 19
+    },
+    {
+      "exam": "48th_bcs",
+      "sourceRows": 100,
+      "scope": "general section only; medical absent",
+      "subjects": {
+        "Bangla Language & Literature": 23,
+        "International Affairs": 19,
+        "Geography, Environment & Disaster Management": 4,
+        "Mathematical Reasoning": 16,
+        "English Language & Literature": 20,
+        "Mental Ability": 3,
+        "Bangladesh Affairs": 15
+      },
+      "questionFormsNonExclusive": {
+        "negative_or_exception": 3,
+        "calculation": 2,
+        "author_title": 3,
+        "language_rule": 8,
+        "date_or_number": 8
+      },
+      "imageDependent": 2,
+      "missingExplanation": 0
+    }
+  ],
+  "exactStemGroupsAcrossMultipleExams": 145,
+  "methods": {
+    "negative_or_exception": "নয়|নয়|ব্যতীত|except|incorrect|not\\b",
+    "calculation": "শতকরা|সমীকরণ|অনুপাত|লগ|log\\b|গড়|গড়|বর্গ|ত্রিভুজ|লসাগু|গসাগু",
+    "author_title": "রচয়িতা|রচয়িতা|রচনা|লেখক|কাব্য|উপন্যাস|author|wrote|poet",
+    "language_rule": "সন্ধি|সমাস|কারক|প্রত্যয়|প্রত্যয়|উপসর্গ|বানান|spelling|preposition|sentence|verb|tense|voice|article",
+    "date_or_number": "কত সালে|কবে|কতটি|কতজন|কোন সালে|কত তারিখ|which year"
+  },
+  "prediction": "No estimated chance of appearing in a future examination is established."
+}

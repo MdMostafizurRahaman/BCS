@@ -285,3 +285,4 @@ footer span{display:none}
 @media(max-width:720px){.sidebar:not(.open){visibility:hidden}
 .sidebar.open{visibility:visible}
 }
+.archive-subjects{border:1px solid var(--line);border-radius:8px;padding:12px 16px;display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;min-width:0}.archive-subjects legend{font-size:12px;color:var(--muted)}.archive-subjects label,.archive-check{font-size:12px;display:flex;align-items:center;gap:8px}.archive-subjects input,.archive-check input{width:auto;accent-color:var(--green)}#archive-papers{min-height:180px}.archive-images figure{margin:12px 0}.archive-images img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:white}.archive-images figcaption{font-size:10px;color:var(--muted);margin:5px 0}.number-grid{max-height:320px;overflow:auto;padding:3px}@media(max-width:450px){.archive-subjects{grid-template-columns:1fr}}

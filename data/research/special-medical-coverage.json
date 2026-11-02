@@ -1,0 +1,10 @@
+{
+  "medicalQuestions": 108,
+  "byPaper": {
+    "39th_bcs": 7,
+    "42nd_bcs": 1,
+    "48th_bcs": 100
+  },
+  "notes": "Original medical numbering retained only when available. General and medical sources may use different set orders; combined sets are labelled assembled. Publisher answer keys are not official BPSC keys. Study notes are independently written and require medical editorial review. The 39th and 42nd medical collections remain incomplete.",
+  "sourceSHA256": "21171fa543d0ed43f10d9973260b1f073efc9600b3d8dc6e7e541a359c7cb480"
+}

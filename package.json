@@ -7,6 +7,8 @@
     "test": "node --test tests/*.test.js",
     "check": "node --check app.js && node --check core.js",
     "dev": "python -m http.server 5173 --bind 127.0.0.1",
-    "build:bank": "python scripts/build-bank.py"
+    "build:bank": "python scripts/build-bank.py && python scripts/build-medical-bank.py",
+    "research:history": "python scripts/analyse-bcs-history.py",
+    "audit:content": "node scripts/audit-content.mjs"
   }
 }

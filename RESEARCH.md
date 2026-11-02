@@ -1,4 +1,22 @@
-# Content audit and preparation model
+## 3 November correction: authentic special BCS medical content
+
+The Indian MedMCQA dataset is now a separate file and is not loaded or counted in default BCS preparation.
+Local verified-transcript coverage: 48th medical 100/100, 39th medical 7/100, 42nd medical 1/100. Only the 48th assembled general+medical collection enables 200-question examination. It does not claim a single original printed set order. Medical-only tests and immediate-feedback practice use the real year and publisher URL.
+
+The 48th source is https://web.livemcq.com/blog/48th-special-bcs-question-pdf (medical numbering 101–200). The 39th public Satt Academy records explicitly identify that exam. The first 42nd question is from the publicly indexed preview at https://www.scribd.com/document/1052913928/42nd-Special-BCS-Medical-Part-1. No MedMCQA item fills a missing historical question.
+
+Public pagination of the 39th Satt exam led to login. The 42nd original JPG links returned 404. Scribd public HTML did not expose the full documents. These limits were not bypassed. The LiveMCQ short link `Special-BCS-Health-Exam-Solution` resolves to a **2026 preparation test**, not a past special BCS paper, and was rejected. EEA's free preview provides ten pages, not the complete commercial book. Neither is counted as a complete historical paper.
+
+Added study notes are independently authored and still require medical editorial review. Ambiguous wording and historical treatment keys are identified within the relevant notes. Current-context references for key corrections:
+- ACS/new LBBB: https://www.jacc.org/doi/10.1016/j.jacc.2022.08.750
+- Drug-resistant TB: https://www.who.int/publications/i/item/9789240107243
+- ANC contacts: https://www.ncbi.nlm.nih.gov/books/NBK615641/table/part1.tab37/
+
+The actual request remains incomplete for the full 39th and 42nd medical papers and for the 10,000 Bangladesh-specific question bank. Passing software tests must not be described as meeting those content requirements.
+
+# Initial content audit and preparation model
+
+Update: this document records the initial 264-question stage. The active collection now includes 10,000 supplemental medical records; see `data/research/medical-selection.json`, `data/research/historical-patterns.json` and `THIRD-PARTY-NOTICES.md` for the current source-based expansion and its limits.
 
 Research date: 3 November 2026 (Asia/Dhaka).
 

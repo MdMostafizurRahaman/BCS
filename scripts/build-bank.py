@@ -244,4 +244,5 @@ for q in bank:
     q['o'] = [old_options[i] for i in order]
     q['a'] = order.index(old_answer)
 (ROOT/'questions.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+(ROOT/'data/authored-questions.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(f'{len(legacy)} inherited entries -> 76 unique inherited questions; {len(bank)-76} original practice questions; total {len(bank)}')

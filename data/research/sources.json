@@ -1,0 +1,55 @@
+{
+  "status": "research-in-progress",
+  "sources": [
+    {
+      "exam": 39,
+      "year": 2018,
+      "section": "general",
+      "url": "https://medha.com.bd/wp-content/uploads/2025/04/39th-BCS-Preliminary-Question.pdf",
+      "kind": "third-party-transcription-with-solutions",
+      "originalScanVerified": false,
+      "observations": "Some answer labels and accompanying explanations conflict. Do not ingest an answer key automatically.",
+      "stage": "candidate"
+    },
+    {
+      "exam": 42,
+      "year": 2021,
+      "section": "general",
+      "url": "https://web.livemcq.com/core/uploads/2025/01/42nd-BCS-Question-Solution.pdf",
+      "kind": "third-party-solution-pdf",
+      "originalScanVerified": false,
+      "observations": "Indexed text contains inconsistent date metadata. Direct visual retrieval returned a verification challenge. No bypass attempted; needs an accessible original scan.",
+      "stage": "candidate"
+    },
+    {
+      "exam": 42,
+      "year": 2021,
+      "section": "general",
+      "url": "https://muktoprep.com/bcs/42/",
+      "kind": "third-party-web-question-collection",
+      "originalScanVerified": false,
+      "observations": "Includes topic labels and solutions; not evidence of the complete medical paper. Question wording and mathematical notation require reconciliation with scans.",
+      "stage": "candidate"
+    },
+    {
+      "exam": 48,
+      "year": 2025,
+      "section": "combined",
+      "url": "https://lokkha.com/latest-exam/read/45",
+      "kind": "third-party-web-question-collection",
+      "originalScanVerified": false,
+      "observations": "Page advertises 199 questions, rather than a complete 200-question paper. Missing-question reconciliation is required.",
+      "stage": "candidate"
+    },
+    {
+      "exam": 39,
+      "year": 2018,
+      "section": "dental",
+      "url": "https://synapsepg.org/wp-content/uploads/39-Dental.pdf",
+      "kind": "third-party-dental-collection",
+      "originalScanVerified": false,
+      "observations": "Dental paper: do not misclassify as the Assistant Surgeon medical paper.",
+      "stage": "excluded-from-medical-corpus"
+    }
+  ]
+}

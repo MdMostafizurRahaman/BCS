@@ -1,0 +1,74 @@
+{
+  "activeQuestions": 10264,
+  "authoredOrInherited": 264,
+  "sourcedMedical": 10000,
+  "topics": {
+    "Anatomy": {
+      "questions": 1000,
+      "subtopics": 198
+    },
+    "Biochemistry": {
+      "questions": 1000,
+      "subtopics": 109
+    },
+    "Physiology": {
+      "questions": 1000,
+      "subtopics": 123
+    },
+    "Surgery": {
+      "questions": 1000,
+      "subtopics": 220
+    },
+    "Community Medicine": {
+      "questions": 1000,
+      "subtopics": 154
+    },
+    "Medicine": {
+      "questions": 1000,
+      "subtopics": 217
+    },
+    "Forensic Medicine": {
+      "questions": 1000,
+      "subtopics": 78
+    },
+    "Pathology": {
+      "questions": 1000,
+      "subtopics": 217
+    },
+    "Obstetrics & Gynaecology": {
+      "questions": 1000,
+      "subtopics": 222
+    },
+    "Pharmacology": {
+      "questions": 1000,
+      "subtopics": 127
+    }
+  },
+  "rejectionCounts": {
+    "invalid_choice_type_or_key": 41906,
+    "outside_selected_subjects": 59964,
+    "insufficient_or_oversized_text": 35224,
+    "corrupted_word_or_visual_dependency": 3670,
+    "weak_or_external_explanation": 336,
+    "invalid_options": 310,
+    "country_specific_or_missing_visual": 2032,
+    "near_duplicate_stem": 167,
+    "exact_normalized_duplicate": 214
+  },
+  "rawLabelDistribution": {
+    "3": 42442,
+    "4": 38963,
+    "1": 53591,
+    "2": 47826
+  },
+  "sourceSHA256": "afa1b32379409fce3090a39411a769e5f1739d8bd2c43acb0806a3e070f711ba",
+  "rawRows": 182822,
+  "selection": "1000 per mapped medical subject; round-robin subtopics; deterministic seed; normalized and trigram similarity filters",
+  "limitations": [
+    "Syllabus alignment is subject-level, not independent item-by-item validation",
+    "No historical BCS identity or prediction claim",
+    "Dataset answers and explanations have not received independent medical editorial review",
+    "Trigram screening reduces but cannot prove absence of semantic redundancy",
+    "General subjects retain the smaller authored starter bank"
+  ]
+}
