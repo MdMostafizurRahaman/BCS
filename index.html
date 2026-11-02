@@ -2,54 +2,84 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BCS Master MCQ</title>
-<meta name="description" content="BCS Preliminary MCQ practice with instant answers and explanations.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#146c56">
+<title>BCS Master — চিকিৎসকদের BCS প্রস্তুতি</title>
+<meta name="description" content="বিশেষ BCS স্বাস্থ্য ক্যাডার প্রস্তুতি: বিষয় ও টপিকভিত্তিক MCQ, ব্যাখ্যা, মডেল টেস্ট এবং ব্যক্তিগত রিভিশন।">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="app">
-  <header>
-    <div class="brand">🇧🇩 <span>BCS Master</span></div>
-    <button id="resetBtn" class="ghost">Reset</button>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div>
-        <p class="eyebrow">BCS Preliminary Practice</p>
-        <h1>একটি প্রশ্ন, একটি উত্তর, সঙ্গে সঙ্গে ফলাফল</h1>
-        <p class="sub">প্রশ্নে ক্লিক করো, উত্তর দাও, ভুল হলে ব্যাখ্যা দেখে শেখো।</p>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div><b id="total">1000</b><span>প্রশ্ন</span></div>
-      <div><b id="answered">0</b><span>উত্তর</span></div>
-      <div><b id="correct">0</b><span>সঠিক</span></div>
-      <div><b id="score">0%</b><span>স্কোর</span></div>
-    </section>
-
-    <div class="progress"><div id="progressBar"></div></div>
-
-    <section class="card">
-      <div class="qmeta"><span id="qno">প্রশ্ন ১ / ১০০০</span><span id="status"></span></div>
-      <h2 id="question">Loading...</h2>
-      <div id="options"></div>
-      <div id="explanation" class="explanation hidden"></div>
-      <button id="nextBtn" class="next hidden">পরের প্রশ্ন →</button>
-    </section>
-
-    <section class="controls">
-      <button id="randomBtn">🎲 Random Question</button>
-      <button id="wrongBtn">❌ ভুল প্রশ্ন</button>
-      <button id="allBtn">📚 সব প্রশ্ন</button>
-    </section>
-  </main>
-  <footer>BCS Master MCQ • Mobile friendly • Progress saved on this device</footer>
+<a href="#main" class="skip">মূল কনটেন্টে যান</a>
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#dashboard">
+<span class="brand-icon">✚</span>
+<span>BCS<span class="brand-light">Master</span>
+<small>THE HEALTH CADRE JOURNEY</small>
+</span>
+</a>
+<div class="track-label">● &nbsp; SPECIAL BCS · MEDICAL</div>
+<p class="nav-label">আপনার প্রস্তুতি</p>
+<nav aria-label="প্রধান নেভিগেশন">
+<a href="#dashboard" data-nav="dashboard">
+<span>▦</span> ড্যাশবোর্ড</a>
+<a href="#subjects" data-nav="subjects">
+<span>▤</span> বিষয়ভিত্তিক প্রস্তুতি</a>
+<a href="#practice" data-nav="practice">
+<span>✎</span> প্রশ্ন অনুশীলন</a>
+<a href="#exams" data-nav="exams">
+<span>◷</span> পরীক্ষা কেন্দ্র</a>
+<a href="#archive" data-nav="archive">
+<span>▣</span> বিগত বছরের প্রশ্ন</a>
+<a href="#revision" data-nav="revision">
+<span>↻</span> আমার রিভিশন <b id="revision-count">0</b>
+</a>
+<a href="#analytics" data-nav="analytics">
+<span>▥</span> অগ্রগতি ও বিশ্লেষণ</a>
+</nav>
+<p class="nav-label">প্রস্তুতির সহায়িকা</p>
+<nav aria-label="সহায়িকা">
+<a href="#syllabus" data-nav="syllabus">
+<span>◎</span> সিলেবাস ও পরিকল্পনা</a>
+<a href="#settings" data-nav="settings">
+<span>⚙</span> ডেটা ও সেটিংস</a>
+</nav>
+<div class="sidebar-note">
+<span>✧</span>
+<b>ছোট ছোট অগ্রগতি,<br>বড় স্বপ্নের পথে।</b>
+<p>প্রতিদিন কিছু শিখুন।<br>গতকালের নিজেকে ছাড়িয়ে যান।</p>
 </div>
-<script src="app.js"></script>
+<div class="sidebar-footer">
+<span class="avatar">Dr</span>
+<div>
+<b>আপনার স্টাডি স্পেস</b>
+<small>অগ্রগতি এই ডিভাইসে সংরক্ষিত</small>
+</div>
+</div>
+</aside>
+<div class="workspace">
+<header class="topbar">
+<div class="top-left">
+<button class="icon-button menu" id="menu" aria-label="মেনু খুলুন" aria-expanded="false">☰</button>
+<span id="breadcrumb">আপনার ড্যাশবোর্ড</span>
+</div>
+<div class="top-right">
+<span class="saved-indicator">● &nbsp; Local progress</span>
+<button class="icon-button" id="theme" aria-label="রঙের থিম বদলান">◐</button>
+<span class="avatar">Dr</span>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="loading">আপনার স্টাডি স্পেস তৈরি হচ্ছে…</div>
+</main>
+<footer>BCS Master <span>শিখুন বুঝে। প্রস্তুতি নিন আত্মবিশ্বাসে।</span>
+<a href="#syllabus">উৎস ও কনটেন্ট নীতি ↗</a>
+</footer>
+</div>
+<div id="toast" role="status" aria-live="polite">
+</div>
+<script src="app.js" type="module">
+</script>
 </body>
 </html>

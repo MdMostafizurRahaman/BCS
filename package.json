@@ -1,0 +1,12 @@
+{
+  "name": "bcs-master-medical",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check app.js && node --check core.js",
+    "dev": "python -m http.server 5173 --bind 127.0.0.1",
+    "build:bank": "python scripts/build-bank.py"
+  }
+}
